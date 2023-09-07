@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53J2F84ZW5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  {%- include head.html -%}
+  gtag('config', 'G-53J2F84ZW5');
+</script>
 
-  <body>
+
+{%- include head.html -%}
+
+<body>
 
     {%- include views/header.html -%}
 
@@ -16,12 +26,13 @@
     {%- include extensions/click-to-top.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
     </main>
 
     {%- include views/footer.html -%}
 
-  </body>
+</body>
+
 </html>
