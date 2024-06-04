@@ -1,1 +1,3 @@
-Windows VIM 테스트 
+Windows VIM 테스트
+
+Git Email 변경 후 commit 확인  
